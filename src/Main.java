@@ -77,6 +77,7 @@ public class Main {
 
                             Files.createDirectories(categoryDirectory);
                             Files.move(filePath, targetPath);
+                            System.out.println("Moved to: " + targetPath);
                         } catch (IOException e) {
                             System.out.println("Error moving file: " + fileName);
                         }
